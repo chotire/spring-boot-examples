@@ -48,6 +48,13 @@ Rempte Shell Command 중 dashboard는 처음보는 순간 정말 놀라움이~~!
 
 [Remote Shell 기능소개](http://java.ihoney.pe.kr/379)
 
+예제의 리모트 쉘의 접속 정보는 다음과 같다.
+* Protocol: SSH Version2
+* Hostname/IP: localhost
+* Port: 2000
+* username: chotire
+* password: shell
+
 ## Jolokia Protocol
 Jolokia는 JSON 기반 JMX Agent라고 한다... 사실 JMX는 사용한 경험이 없어 jolokia라는 게 정확하게 무엇을 하는 지 모르겠지만
 Actuator는 jolokia를 사용하여(Optional. Classpath내에 jolokia-core가 존재) JMX 정보를 조회하는 기능을 제공한다.  
@@ -84,6 +91,8 @@ http://localhost:8081/management/metrics
 http://localhost:8081/management/mappings  
 ....
 * Spring Boot Admin: http://localhost/console
+
+위의 주소 중 Root URL을 제외하고 ID/Passoword를 입력하라는 Dialog가 뜨는데 Spring Security 설정으로 뜨는 것으로 admin/admin 계정으로 로그인하면 된다. 
 
 예제의 resources 안에는 _application.properties와 application.yml 두 개의 파일이 있는데 _application.properties 내용을 그대로 application.yml로 옮긴 것이다. 즉, 예제에는 _application.properties를 사용하지 않고 application.yml이 사용되고 있다.   처음에는 기존에 익숙했던 properties 파일을 이용했는데 다른 예제들의 yml을 보니 properties 파일보다는 훨씬 구조화되어있고 또 들여쓰기를 강제화 하는 등 확실히 properties 보다는 좋다. 앞으로는 properties 보다는 yml을 적극 사용하는 게 좋겠다~
 
