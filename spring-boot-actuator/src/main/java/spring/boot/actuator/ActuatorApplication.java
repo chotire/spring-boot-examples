@@ -2,13 +2,11 @@ package spring.boot.actuator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import de.codecentric.boot.admin.config.EnableAdminServer;
 
 @SpringBootApplication
-@EnableAdminServer
-@EnableDiscoveryClient
+@EnableAdminServer //Spring Boot Admin 서버 등록
 public class ActuatorApplication {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(ActuatorApplication.class, args);
