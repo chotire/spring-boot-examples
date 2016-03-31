@@ -1,0 +1,55 @@
+debug: true
+
+server:
+  address: 127.0.0.1
+  port: 80
+  tomcat:
+    basedir: target/tomcat
+    accesslog:
+      enabled: true
+      pattern: '%h %t "%r" %s %b'
+
+info:
+  app:
+    name: Spring Actuator Example
+    description: Spring Actuator Working Examples
+    version: 1.0
+
+logging:
+  file: target/tomcat/logs/app.log
+  
+management:
+  address: 127.0.0.1
+  port: 8081
+  context-path: /details
+  security:
+    enabled: true
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin
+
+endpoints:
+  shutdown:
+    enabled: true
+    
+shell:
+  auth: 
+    simple:
+      user:
+        name: chotire
+        password: shell
+  ssh:
+    port: 2222
+    
+spring:
+  boot:
+    admin:
+      url: http://localhost/console
+      context-path: /console
+      client:
+        prefer-ip: true
+        name: actuator-examples(by chotire)
