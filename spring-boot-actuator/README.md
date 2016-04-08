@@ -77,7 +77,7 @@ Actuator Endpoints, Jolokia Protocol은 요청에 대한 응답으로 JSON형태
 
 # 정리
 예제의 서비스 주소는 다음과 같다. 예제를 구동 한 후 웹브라우저를 통해 접근.
-* Root: http://localhost
+* Root: http://localhost:8080
 * Management(Actuator Endpoints 접근): http://localhost:8081/management  
 http://localhost:8081/management/autoconfig  
 http://localhost:8081/management/beans  
