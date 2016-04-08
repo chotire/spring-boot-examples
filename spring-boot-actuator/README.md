@@ -71,7 +71,7 @@ http://localhost:8081/management/jolokia/read/java.lang:type=Memory/HeapMemoryUs
 
 ## Spring Boot Admin
 Actuator Endpoints, Jolokia Protocol은 요청에 대한 응답으로 JSON형태의 값을 돌려준다. 즉, 데이터의 시각화(Visualization)가 된 상태가 아니므로 그 내용을 읽기가 다소 부담스럽다.  
-시각화된 오픈 소스가 혹시 있지는 않을까해서 찾아봤는데 역시나 존재한다. 이름은 [Spring Boot Admin](https://github.com/codecentric/spring-boot-admin) 로 간단한?(간단하지만 실제 결과물을 삽질이 필요했다. ㅠㅠ) 설정만으로 훌륭한 화면을 볼 수 있다.
+시각화된 오픈 소스가 혹시 있지는 않을까해서 찾아봤는데 역시나 존재한다. 이름은 [Spring Boot Admin](https://github.com/codecentric/spring-boot-admin) 로 간단한 설정만으로 훌륭한 화면을 볼 수 있다.
 
 ![alt text](https://raw.githubusercontent.com/codecentric/spring-boot-admin/master/screenshot-details.png "")
 
@@ -90,7 +90,7 @@ http://localhost:8081/management/info
 http://localhost:8081/management/metrics  
 http://localhost:8081/management/mappings  
 ....
-* Spring Boot Admin: http://localhost/console
+* Spring Boot Admin: http://localhost:8080/console
 
 위의 주소 중 Root URL을 제외하고 ID/Passoword를 입력하라는 Dialog가 뜨는데 Spring Security 설정으로 뜨는 것으로 admin/admin 계정으로 로그인하면 된다. 
 
